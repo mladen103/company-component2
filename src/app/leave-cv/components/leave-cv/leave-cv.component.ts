@@ -1,17 +1,26 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { trigger, transition, animate, style } from '@angular/animations';
+
 
 @Component({
   selector: 'app-leave-cv',
   templateUrl: './leave-cv.component.html',
-  styleUrls: ['./leave-cv.component.css']
+  styleUrls: ['./leave-cv.component.css'],
+  animations: [
+    trigger('fade', [
+      transition("void => *", [
+        style({opacity: 0}), 
+        animate(1000)
+      ])
+    ])
+  ]
 })
 export class LeaveCvComponent implements OnInit {
 
   constructor() { }
 
   leaveCvForm : FormGroup;
-
   ngOnInit() {
 
     this.leaveCvForm = new FormGroup({
