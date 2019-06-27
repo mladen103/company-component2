@@ -19,7 +19,7 @@ export class LeaveCvComponent implements OnInit {
       'lastName' : new FormControl(null, Validators.required),
       'gender' : new FormControl('male', Validators.required),
       'email' : new FormControl(null, [Validators.required, Validators.email]),
-      'yearOfStudy' : new FormControl(null, Validators.required),
+      'yearOfStudy' : new FormControl('0', Validators.required),
       'aboutMe' : new FormControl(null, Validators.required)
     });
   }

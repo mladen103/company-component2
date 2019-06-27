@@ -6,13 +6,18 @@
         <label class="control-label col-sm-2" for="firstName">First name:</label>
         <div class="col-sm-10">
           <input type="text" class="form-control" id="firstName" placeholder="First Name" formControlName="firstName">
+          <span *ngIf="!leaveCvForm.get('firstName').valid && leaveCvForm.get('firstName').touched" class="help-block form-group col-sm-4 red">First name is required.</span>
         </div>
+        
+
       </div>
 
+      
       <div class="form-group">
         <label class="control-label col-sm-2" for="lastName" >Last name:</label>
         <div class="col-sm-10">
           <input type="text" class="form-control" id="lastName" placeholder="Last Name" formControlName="lastName">
+          <span *ngIf="!leaveCvForm.get('lastName').valid && leaveCvForm.get('lastName').touched" class="help-block form-group col-sm-4 red">Last name is required.</span>
         </div>
       </div>
 
@@ -20,7 +25,8 @@
           <label class="control-label col-sm-2" for="gender">Pol:</label>          
 
               <input  type="radio" value="male" id="male" name="gender" formControlName="gender"> M
-              <input class="from-control" value="female" type="radio" id="female" name="gender" formControlName="gender"> Ž          
+              <input class="from-control" value="female" type="radio" id="female" name="gender" formControlName="gender"> Ž
+              <!-- <span *ngIf="!leaveCvForm.get('gender').valid && leaveCvForm.get('gender').touched" class="help-block form-group col-sm-4 red">Gender is required.</span> -->
           
         </div>
   
@@ -28,6 +34,7 @@
         <label class="control-label col-sm-2" for="email">Email:</label>
         <div class="col-sm-10">
           <input type="email" class="form-control" id="email" placeholder="Enter email" formControlName="email">
+          <span *ngIf="!leaveCvForm.get('email').valid && leaveCvForm.get('email').touched" class="help-block form-group col-sm-4 red">Email is required.</span>
         </div>
       </div>
       
@@ -35,13 +42,14 @@
           <label class="control-label col-sm-2" for="yearOfStudy">Year Of Study:</label>
           <div class="col-sm-10">
             <select class="form-control" id="yearOfStudy" formControlName="yearOfStudy">
-                <option>Završio</option>
-                <option>Prva</option>
-                <option>Druga</option>
-                <option>Treća</option>
-                <option>Četvrta</option>
-                <option>Peta</option>
+                <option value="0">Završio</option>
+                <option value="1">Prva</option>
+                <option value="2">Druga</option>
+                <option value="3">Treća</option>
+                <option value="4">Četvrta</option>
+                <option value="5">Peta</option>
               </select>
+              <span *ngIf="!leaveCvForm.get('yearOfStudy').valid && leaveCvForm.get('yearOfStudy').touched" class="help-block form-group col-sm-4 red">Year of study is required.</span>
           </div>
         </div>
 
@@ -49,6 +57,7 @@
             <label class="control-label col-sm-2" for="aboutMe" >About Me:</label>
             <div class="col-sm-10">
               <textarea rows=5 columns=30 class="form-control" id="aboutMe" name="aboutMe" placeholder="About you, Years of experiance, Technologies..." formControlName="aboutMe"></textarea>
+              <span *ngIf="!leaveCvForm.get('aboutMe').valid && leaveCvForm.get('aboutMe').touched" class="help-block form-group col-sm-4 red">About Me is required.</span>
             </div>
           </div>
     
