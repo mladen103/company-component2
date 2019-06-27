@@ -1,0 +1,13 @@
+.formDiv {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+input[type="radio"] {
+    margin-left: 20px;
+    width: 15px;
+    height: 15px;
+}
+textarea{
+    margin: 0px;
+    padding: 10px;
+}
