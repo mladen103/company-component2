@@ -47,14 +47,29 @@
           <h2>Happy Clients</h2>
           <p> Our success is measured by results, the most important being how our clients feel about their experience with us. Happy customers and ongoing relationships are what we strive for. These reviews affirm that we’re onto something. </p>
         </div>
-        <div class="col-md-4 text-center item-block">
-          <blockquote>
-            <p>&ldquo; OMG! I am blown away – my website is amazing! So much more reflective of who I am…I really am so impressed! It has such an open, expansive feel. You are a rock star! Much Kindness. &rdquo;</p>
-            <p><span class="fh5co-author"><cite>Jason Davidson</cite></span><i class="icon twitter-color icon-twitter pull-right"></i></p>
-
-          </blockquote>
-        </div>
-        <div class="col-md-4 text-center item-block">
+        <ng-container *ngFor="let comment of comments">
+            <div class="col-md-4 text-center item-block">
+                <blockquote>
+                  <p>{{comment.comment}}</p>
+                  
+                      <p><span class="fh5co-author"><cite>{{comment.person}}</cite></span>
+                        
+                        <ng-container *ngIf="comment.socialMedia == 'twitter'; else facebook">
+                            <i class="icon twitter-color icon-twitter pull-right"></i>
+                        </ng-container>
+                        <ng-template #facebook>
+                          <ng-container *ngIf="comment.socialMedia == 'facebook'; else google">
+                              <i class="icon facebook-color icon-facebook pull-right"></i>
+                          </ng-container>
+                        </ng-template>
+                      <ng-template #google>
+                          <i class="icon googleplus-color icon-google-plus pull-right"></i>
+                      </ng-template>
+      
+                </blockquote>
+              </div>      
+        </ng-container>
+        <!-- <div class="col-md-4 text-center item-block">
           <blockquote>
             <p>&ldquo; The compliments just keep coming. I would like to thank you and your team, for the wonderful work you all have done to accomplish what we set out to achieve with the Learning Gateway website – the design, the ease to find their way around. It’s all very good. &rdquo;</p>
             <p><span class="fh5co-author"><cite>Kyle Smith</cite></span><i class="icon googleplus-color icon-google-plus pull-right"></i></p>
@@ -66,7 +81,7 @@
             <p>&ldquo; All I can say is Thank you! You have been absolutely amazing. I love how everything came together as well. I’ve already recommended you to a few people. I will be contacting you sooner than later. &rdquo;</p>
             <p><span class="fh5co-author"><cite>Rick Cook</cite></span><i class="icon facebook-color icon-facebook pull-right"></i></p>
           </blockquote>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

@@ -5,6 +5,7 @@ import {FormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
 import { Routes, RouterModule } from '@angular/router';
 import { LayoutComponent } from './shared/components/layout/layout.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const routes : Routes = [
   {
@@ -116,7 +117,8 @@ const routes : Routes = [
   imports: [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

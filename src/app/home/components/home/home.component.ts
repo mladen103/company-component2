@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommentService } from '../../services/comment.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  public comments : Comment[];
+
+  constructor(private commentService : CommentService) { }
 
   ngOnInit() {
-  }
+    this.commentService.getComments().subscribe((data : Comment[])=>{
+      this.comments = data;
+  })
+}
 
 }

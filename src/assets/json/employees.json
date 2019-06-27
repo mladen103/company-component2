@@ -1,20 +1,51 @@
 [
+	
+	{
+		"firstName" : "Mladen",
+		"lastName" : "Petrović",
+		"picture" : "ja.jpg",
+		"biographyShort" : "One word... CEO of this company. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. ",
+		"biographyFull": "One word... CEO of this company."
+	},
+
 	{
 		"firstName" : "Bil",
 		"lastName" : "Gates",
 		"picture" : "bill-gates.jpg",
-		"biography" : "Bil Gates bil gates bil gates"
+		"biographyShort" : "Gates is one of the best-known entrepreneurs of the personal computer revolution. He has been criticized for his business tactics, which have been considered anti-competitive. This opinion has been upheld by numerous court rulings.",
+		"biographyFull": "Since 1987, Gates has been included in the Forbes list of the world's wealthiest people, an index of the wealthiest documented individuals, excluding and ranking against those with wealth that is not able to be completely ascertained. From 1995 to 2017, he held the Forbes title of the richest person in the world all but four of those years, and held it consistently from March 2014 to July 2017, with an estimated net worth of US$89.9 billion as of October 2017. However, on July 27, 2017, and since October 27, 2017, he has been surpassed by Amazon founder and CEO Jeff Bezos, who had an estimated net worth of US$90.6 billion at the time.[14] As of August 6, 2018, Gates had a net worth of $95.4 billion, making him the second-richest person in the world, behind Bezos. Later in his career and since leaving Microsoft, Gates pursued a number of philanthropic endeavors. He donated large amounts of money to various charitable organizations and scientific research programs through the Bill & Melinda Gates Foundation, reported to be the world's largest private charity.[15] In 2009, Gates and Warren Buffett founded The Giving Pledge, whereby they and other billionaires pledge to give at least half of their wealth to philanthropy.[16] The foundation works to save lives and improve global health, and is working with Rotary International to eliminate polio."
 	},
+
 	{
 		"firstName" : "Mark",
 		"lastName" : "Zuckerberg",
 		"picture" : "mark-zuckerberg.jpg",
-		"biography" : "Mark zurkberger bil gates bil gates"
+		"biographyShort" : "Mark Elliot Zuckerberg (born May 14, 1984) is an American technology entrepreneur and philanthropist. Zuckerberg is known for co-founding and leading Facebook as its chairman and chief executive officer.",
+		"biographyFull": "Born in White Plains, New York, Zuckerberg attended Harvard University, where he launched Facebook from his dormitory room on February 4, 2004, with college roommates Eduardo Saverin, Andrew McCollum, Dustin Moskovitz, and Chris Hughes. Originally launched to select college campuses, the site expanded rapidly and eventually beyond colleges, reaching one billion users by 2012. Zuckerberg took the company public in May 2012 with majority shares. His net worth is estimated to be $55.0 billion as of November 30, 2018, declining over the last year with Facebook stock as a whole. In 2007 at age 23 he became the world's youngest self-made billionaire. As of 2018, he is the only person under 50 in the Forbes ten richest people list, and the only one under 40 in the Top 20 Billionaires list. Since 2010, Time magazine has named Zuckerberg among the 100 wealthiest and most influential people in the world as a part of its Person of the Year award. In December 2016, Zuckerberg was ranked 10th on Forbes list of The World's Most Powerful People."
 	},
+
 	{
 		"firstName" : "Robert C",
 		"lastName" : "Monk",
 		"picture" : "uncle-bob.jpg",
-		"biography" : "Uncle bob anananana lorem ipsum"
+		"biographyShort" : "Robert Cecil Martin, colloquially known as \"Uncle Bob\", is an American software engineer and instructor. He is best known for being one of the authors of the Agile Manifesto and for developing several software design principles.",
+		"biographyFull": "Robert Cecil Martin, colloquially known as \"Uncle Bob\", is an American software engineer and instructor. He is best known for being one of the authors of the Agile Manifesto[3][4] and for developing several software design principles. He was also the editor-in-chief of C++ Report magazine and served as the first chairman of the Agile Alliance. Martin operated the now-defunct company, Object Mentor, which provided instructor-led training courses about extreme programming methodology. He now operates two companies: Uncle Bob Consulting, which provides consulting and training services, and Clean Coders, which provides training videos."
+	},
+
+	{
+		"firstName" : "Anders",
+		"lastName" : "Hejlsberg",
+		"picture" : "anders-hejlsberg.jpg",
+		"biographyShort" : "Anders Hejlsberg (born 2 December 1960) is a prominent Danish software engineer who co-designed several popular and commercially successful programming languages and development tools. He was the original author of Turbo Pascal and the chief architect of Delphi. ",
+		"biographyFull": "In 1996, Hejlsberg left Borland and joined Microsoft. One of his first achievements was the J++ programming language and the Windows Foundation Classes; he also became a Microsoft Distinguished Engineer and Technical Fellow. Since 2000, he has been the lead architect of the team developing the C# language. In 2012 Hejlsberg announced a new Microsoft project, TypeScript, a superset of JavaScript. He received the 2001 Dr. Dobb's Excellence in Programming Award for his work on Turbo Pascal, Delphi, C# and the Microsoft .NET Framework. Together with Shon Katzenberger, Scott Wiltamuth, Todd Proebsting, Erik Meijer, Peter Hallam and Peter Sollich, Anders was awarded a Technical Recognition Award for Outstanding Technical Achievement for their work on the C# language in 2007. A video about this is available at Microsoft Channel 9."
+	},
+
+	{
+		"firstName" : "Rasmus",
+		"lastName" : "Lerdorf",
+		"picture" : "rasmus-lerdorf.jpg",
+		"biographyShort" : "Rasmus Lerdorf (born 22 November 1968) is a Danish-Canadian programmer. He created the PHP scripting language, authoring the first two versions of the language and participated in the development of later versions led by a group of developers including Jim Winstead.",
+		"biographyFull": "From September 2002 to November 2009 Lerdorf was employed by Yahoo! Inc. as an Infrastructure Architecture Engineer. In 2010, he joined WePay in order to develop their application programming interface. Throughout 2011 he was a roving consultant for startups. On 22 February 2012 he announced on Twitter that he had joined Etsy. In July, 2013 Rasmus joined Jelastic as a senior advisor to help them with the creation of new technology. Lerdorf is a frequent speaker at Open Source conferences around the world. During his keynote presentation at OSCMS 2007, he presented a security vulnerability in each of the projects represented at the conference that year. Lerdorf also appeared at the WeAreDevelopers Conferences 2017 and 2019, making a speech on the history of PHP, the new PHP 7 release in 2017, and the 25 years of PHP.."
 	}
+
 ]

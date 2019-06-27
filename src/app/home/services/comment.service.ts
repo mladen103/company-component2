@@ -1,17 +1,15 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-
 @Injectable({
   providedIn: 'root'
 })
-
-export class EmployeesService {
+export class CommentService {
 
   constructor(private http : HttpClient) { }
 
-  public getEmployees(){
-    return this.http.get("http://localhost:4200/assets/json/employees.json");
+  public getComments(){
+    return this.http.get("http://localhost:4200/assets/json/comments.json");
   }
 
 }
