@@ -38,7 +38,73 @@ const routes : Routes = [
       }
     ]
     //loadChildren: './about-us/about-us.module#AboutUsModule'
-  }
+  },
+
+  {
+    path : 'employees',
+    redirectTo: 'employees',
+    pathMatch: 'full'
+  },
+  {
+    path: 'employees',
+    component: LayoutComponent,
+    children: [
+      {
+        path: '',
+        loadChildren: './employees/employees.module#EmployeesModule'  
+      }
+    ]
+  },
+
+  {
+    path : 'about-author',
+    redirectTo: 'about-author',
+    pathMatch: 'full'
+  },
+  {
+    path: 'about-author',
+    component: LayoutComponent,
+    children: [
+      {
+        path: '',
+        loadChildren: './about-author/about-author.module#AboutAuthorModule'
+      }
+    ]
+  },
+
+  {
+    path : 'contact',
+    redirectTo: 'contact',
+    pathMatch: 'full'
+  },
+  {
+    path: 'contact',
+    component: LayoutComponent,
+    children: [
+      {
+        path: '',
+        loadChildren: './contact/contact.module#ContactModule'  
+      }
+    ]
+  },
+
+  {
+    path : 'leave-cv',
+    redirectTo: 'leave-cv',
+    pathMatch: 'full'
+  },
+  {
+    path: 'leave-cv',
+    component: LayoutComponent,
+    children: [
+      {
+        path: '',
+        loadChildren: './leave-cv/leave-cv.module#LeaveCvModule'  
+      }
+    ]
+  },
+
+  
   
 ];
 

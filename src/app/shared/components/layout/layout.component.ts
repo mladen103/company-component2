@@ -52,12 +52,6 @@ export class LayoutComponent implements OnInit {
       mainScript.setAttribute("id", "mainScript");
       mainScript.setAttribute("src", "assets/js/main.js");
       document.body.appendChild(mainScript);
-  
-      document.getElementById("testScript").remove();
-      let testScript = document.createElement("script");
-      testScript.setAttribute("id", "testScript");
-      testScript.setAttribute("src", "assets/js/test.js");
-      document.body.appendChild(testScript);
 
   }
 

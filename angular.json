@@ -98,8 +98,7 @@
                 "node_modules/bootstrap/dist/js/bootstrap.js",
                 "src/assets/js/jquery.waypoints.min.js",
                 "src/assets/js/jquery.flexslider-min.js",
-                "src/assets/js/main.js",
-                "src/assets/js/test.js"
+                "src/assets/js/main.js"
                 
                 
             ]

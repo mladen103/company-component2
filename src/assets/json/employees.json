@@ -1,0 +1,20 @@
+[
+	{
+		"firstName" : "Bil",
+		"lastName" : "Gates",
+		"picture" : "bill-gates.jpg",
+		"biography" : "Bil Gates bil gates bil gates"
+	},
+	{
+		"firstName" : "Mark",
+		"lastName" : "Zuckerberg",
+		"picture" : "mark-zuckerberg.jpg",
+		"biography" : "Mark zurkberger bil gates bil gates"
+	},
+	{
+		"firstName" : "Robert C",
+		"lastName" : "Monk",
+		"picture" : "uncle-bob.jpg",
+		"biography" : "Uncle bob anananana lorem ipsum"
+	}
+]
