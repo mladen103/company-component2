@@ -26,6 +26,12 @@ export class LeaveCvComponent implements OnInit {
 
   onSubmit(){
     console.log(this.leaveCvForm);
+    if(!this.leaveCvForm.invalid){
+        alert("You have successfully sent cv! You will receive a reply via mail.");
+    }
+    else{
+      alert("Data is invalid.");
+    }
   }
 
 }
